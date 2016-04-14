@@ -13,6 +13,15 @@
 		0589E1E71CBF3F29001DCFB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0589E1E51CBF3F29001DCFB0 /* Main.storyboard */; };
 		0589E1E91CBF3F29001DCFB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0589E1E81CBF3F29001DCFB0 /* Assets.xcassets */; };
 		0589E1EC1CBF3F29001DCFB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0589E1EA1CBF3F29001DCFB0 /* LaunchScreen.storyboard */; };
+		0589E2051CBF4652001DCFB0 /* ImageResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0589E1F41CBF4652001DCFB0 /* ImageResources.bundle */; };
+		0589E2061CBF4652001DCFB0 /* ZCXActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 0589E1F61CBF4652001DCFB0 /* ZCXActionSheet.m */; };
+		0589E2071CBF4652001DCFB0 /* ZCXActionSheetContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0589E1F81CBF4652001DCFB0 /* ZCXActionSheetContentView.m */; };
+		0589E2081CBF4652001DCFB0 /* ZCXCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0589E1FA1CBF4652001DCFB0 /* ZCXCollectionReusableView.m */; };
+		0589E2091CBF4652001DCFB0 /* ZCXCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 0589E1FC1CBF4652001DCFB0 /* ZCXCollectionViewLayout.m */; };
+		0589E20A1CBF4652001DCFB0 /* ZCXPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0589E1FE1CBF4652001DCFB0 /* ZCXPhotoCell.m */; };
+		0589E20B1CBF4652001DCFB0 /* ZCXPhotoCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0589E2001CBF4652001DCFB0 /* ZCXPhotoCollectionView.m */; };
+		0589E20C1CBF4652001DCFB0 /* ZCXPhotoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0589E2021CBF4652001DCFB0 /* ZCXPhotoManager.m */; };
+		0589E20D1CBF4652001DCFB0 /* ZCXScrollLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 0589E2041CBF4652001DCFB0 /* ZCXScrollLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +35,23 @@
 		0589E1E81CBF3F29001DCFB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0589E1EB1CBF3F29001DCFB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0589E1ED1CBF3F29001DCFB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0589E1F41CBF4652001DCFB0 /* ImageResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ImageResources.bundle; sourceTree = "<group>"; };
+		0589E1F51CBF4652001DCFB0 /* ZCXActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCXActionSheet.h; sourceTree = "<group>"; };
+		0589E1F61CBF4652001DCFB0 /* ZCXActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCXActionSheet.m; sourceTree = "<group>"; };
+		0589E1F71CBF4652001DCFB0 /* ZCXActionSheetContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCXActionSheetContentView.h; sourceTree = "<group>"; };
+		0589E1F81CBF4652001DCFB0 /* ZCXActionSheetContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCXActionSheetContentView.m; sourceTree = "<group>"; };
+		0589E1F91CBF4652001DCFB0 /* ZCXCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCXCollectionReusableView.h; sourceTree = "<group>"; };
+		0589E1FA1CBF4652001DCFB0 /* ZCXCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCXCollectionReusableView.m; sourceTree = "<group>"; };
+		0589E1FB1CBF4652001DCFB0 /* ZCXCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCXCollectionViewLayout.h; sourceTree = "<group>"; };
+		0589E1FC1CBF4652001DCFB0 /* ZCXCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCXCollectionViewLayout.m; sourceTree = "<group>"; };
+		0589E1FD1CBF4652001DCFB0 /* ZCXPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCXPhotoCell.h; sourceTree = "<group>"; };
+		0589E1FE1CBF4652001DCFB0 /* ZCXPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCXPhotoCell.m; sourceTree = "<group>"; };
+		0589E1FF1CBF4652001DCFB0 /* ZCXPhotoCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCXPhotoCollectionView.h; sourceTree = "<group>"; };
+		0589E2001CBF4652001DCFB0 /* ZCXPhotoCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCXPhotoCollectionView.m; sourceTree = "<group>"; };
+		0589E2011CBF4652001DCFB0 /* ZCXPhotoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCXPhotoManager.h; sourceTree = "<group>"; };
+		0589E2021CBF4652001DCFB0 /* ZCXPhotoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCXPhotoManager.m; sourceTree = "<group>"; };
+		0589E2031CBF4652001DCFB0 /* ZCXScrollLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCXScrollLayout.h; sourceTree = "<group>"; };
+		0589E2041CBF4652001DCFB0 /* ZCXScrollLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCXScrollLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +84,7 @@
 		0589E1DB1CBF3F29001DCFB0 /* ZCXActionSheet */ = {
 			isa = PBXGroup;
 			children = (
+				0589E1F31CBF3F82001DCFB0 /* ZCXActionSheet */,
 				0589E1DF1CBF3F29001DCFB0 /* AppDelegate.h */,
 				0589E1E01CBF3F29001DCFB0 /* AppDelegate.m */,
 				0589E1E21CBF3F29001DCFB0 /* ViewController.h */,
@@ -77,6 +104,30 @@
 				0589E1DD1CBF3F29001DCFB0 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0589E1F31CBF3F82001DCFB0 /* ZCXActionSheet */ = {
+			isa = PBXGroup;
+			children = (
+				0589E1F41CBF4652001DCFB0 /* ImageResources.bundle */,
+				0589E1F51CBF4652001DCFB0 /* ZCXActionSheet.h */,
+				0589E1F61CBF4652001DCFB0 /* ZCXActionSheet.m */,
+				0589E1F71CBF4652001DCFB0 /* ZCXActionSheetContentView.h */,
+				0589E1F81CBF4652001DCFB0 /* ZCXActionSheetContentView.m */,
+				0589E1F91CBF4652001DCFB0 /* ZCXCollectionReusableView.h */,
+				0589E1FA1CBF4652001DCFB0 /* ZCXCollectionReusableView.m */,
+				0589E1FB1CBF4652001DCFB0 /* ZCXCollectionViewLayout.h */,
+				0589E1FC1CBF4652001DCFB0 /* ZCXCollectionViewLayout.m */,
+				0589E1FD1CBF4652001DCFB0 /* ZCXPhotoCell.h */,
+				0589E1FE1CBF4652001DCFB0 /* ZCXPhotoCell.m */,
+				0589E1FF1CBF4652001DCFB0 /* ZCXPhotoCollectionView.h */,
+				0589E2001CBF4652001DCFB0 /* ZCXPhotoCollectionView.m */,
+				0589E2011CBF4652001DCFB0 /* ZCXPhotoManager.h */,
+				0589E2021CBF4652001DCFB0 /* ZCXPhotoManager.m */,
+				0589E2031CBF4652001DCFB0 /* ZCXScrollLayout.h */,
+				0589E2041CBF4652001DCFB0 /* ZCXScrollLayout.m */,
+			);
+			path = ZCXActionSheet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +190,7 @@
 				0589E1EC1CBF3F29001DCFB0 /* LaunchScreen.storyboard in Resources */,
 				0589E1E91CBF3F29001DCFB0 /* Assets.xcassets in Resources */,
 				0589E1E71CBF3F29001DCFB0 /* Main.storyboard in Resources */,
+				0589E2051CBF4652001DCFB0 /* ImageResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,9 +201,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0589E20A1CBF4652001DCFB0 /* ZCXPhotoCell.m in Sources */,
 				0589E1E41CBF3F29001DCFB0 /* ViewController.m in Sources */,
 				0589E1E11CBF3F29001DCFB0 /* AppDelegate.m in Sources */,
+				0589E2071CBF4652001DCFB0 /* ZCXActionSheetContentView.m in Sources */,
+				0589E20B1CBF4652001DCFB0 /* ZCXPhotoCollectionView.m in Sources */,
+				0589E20D1CBF4652001DCFB0 /* ZCXScrollLayout.m in Sources */,
+				0589E2091CBF4652001DCFB0 /* ZCXCollectionViewLayout.m in Sources */,
+				0589E2081CBF4652001DCFB0 /* ZCXCollectionReusableView.m in Sources */,
 				0589E1DE1CBF3F29001DCFB0 /* main.m in Sources */,
+				0589E20C1CBF4652001DCFB0 /* ZCXPhotoManager.m in Sources */,
+				0589E2061CBF4652001DCFB0 /* ZCXActionSheet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

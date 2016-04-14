@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ZCXActionSheet.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+}
+
+- (IBAction)showSheet:(id)sender {
+    ZCXActionSheet *sheet = [ZCXActionSheet actionSheetWithTitle:nil
+                                               cancelButtonTitle:@"取消"
+                                               otherButtonTitles:@[@"拍照",
+                                                                   @"从手机相册选择"]
+                                                 showImagePicker:YES
+                                                          result:^(NSInteger buttonIndex, NSArray *selectedImagesArray)
+                             {
+                                 NSLog(@"selectedIndex： %@\nselectedImages： %@",@(buttonIndex),selectedImagesArray);
+                             }];
+    sheet.selectDescription = @"确认选择";
+    sheet.maxCount = 9;
+    [sheet show];
 }
 
 - (void)didReceiveMemoryWarning {
