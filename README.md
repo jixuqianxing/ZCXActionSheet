@@ -4,7 +4,7 @@
 
 类似微信中的选择照片控件
 
-![image]()
+![image](https://github.com/jixuqianxing/ZCXActionSheet/blob/master/Screenshot/demo.gif?raw=true)
 
 用法：
 
