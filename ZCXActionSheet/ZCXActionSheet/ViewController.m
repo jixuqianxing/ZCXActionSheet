@@ -23,7 +23,9 @@
     ZCXActionSheet *sheet = [ZCXActionSheet actionSheetWithTitle:nil
                                                cancelButtonTitle:@"取消"
                                                otherButtonTitles:@[@"拍照",
-                                                                   @"从手机相册选择"]
+                                                                   @"从手机相册选择",
+                                                                   @"按钮1",
+                                                                   @"按钮2"]
                                                  showImagePicker:YES
                                                           result:^(NSInteger buttonIndex, NSArray *selectedImagesArray)
                              {
