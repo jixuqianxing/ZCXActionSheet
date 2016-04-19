@@ -6,6 +6,8 @@
 
 ![image](https://github.com/jixuqianxing/ZCXActionSheet/blob/master/Screenshot/demo.gif?raw=true)
 
+![image](https://github.com/jixuqianxing/ZCXActionSheet/blob/master/Screenshot/demo.png?raw=true)
+
 类似原生`UIActionSheet`接口设计，使用`AutoLayout`布局，支持横竖屏切换，按钮个数自定义，直接传入按钮标题即可。
 
 用法：

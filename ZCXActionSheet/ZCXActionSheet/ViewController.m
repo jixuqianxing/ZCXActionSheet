@@ -20,13 +20,13 @@
 }
 
 - (IBAction)showSheet:(id)sender {
-    ZCXActionSheet *sheet = [ZCXActionSheet actionSheetWithTitle:nil
+    ZCXActionSheet *sheet = [ZCXActionSheet actionSheetWithTitle:@"标题"
                                                cancelButtonTitle:@"取消"
                                                otherButtonTitles:@[@"拍照",
                                                                    @"从手机相册选择",
                                                                    @"按钮1",
                                                                    @"按钮2"]
-                                                 showImagePicker:YES
+                                                 showImagePicker:NO
                                                           result:^(NSInteger buttonIndex, NSArray *selectedImagesArray)
                              {
                                  NSLog(@"selectedIndex： %@\nselectedImages： %@",@(buttonIndex),selectedImagesArray);
