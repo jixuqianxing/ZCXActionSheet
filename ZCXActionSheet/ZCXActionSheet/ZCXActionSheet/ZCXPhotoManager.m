@@ -13,8 +13,6 @@
 
 @property (nonatomic, strong) ALAssetsLibrary *assetsLibrary;
 
-@property (nonatomic, strong) NSArray *caheImagesArray;
-
 @end
 
 @implementation ZCXPhotoManager
@@ -37,36 +35,28 @@
 }
 
 - (void)getImages:(void(^)(NSMutableArray *imageArray))imageBlock {
-    
-    /**
-     *  优先展示缓存数据
-     */
-    if (_caheImagesArray.count > 0) {
-        imageBlock([_caheImagesArray mutableCopy]);
-    }
-    
     __block NSMutableArray *assetsArray = [[NSMutableArray alloc] init];
-    [_assetsLibrary enumerateGroupsWithTypes:ALAssetsGroupSavedPhotos usingBlock:^(ALAssetsGroup *group, BOOL *stop)
-     {
-         if (group) {
-             ALAssetsFilter *onlyPhotosFilter = [ALAssetsFilter allPhotos];
-             [group setAssetsFilter:onlyPhotosFilter];
-             [group enumerateAssetsWithOptions:NSEnumerationReverse usingBlock:^(ALAsset *result, NSUInteger index, BOOL *stop) {
-                 if (result) {
-                     [assetsArray addObject:result];
-                     if (assetsArray.count == maxSize) {
-                         *stop = YES;
-                     }
-                 }
-             }];
-         }else{
-             imageBlock(assetsArray);
-             _caheImagesArray = [assetsArray copy];
-         }
-     } failureBlock:^(NSError *error) {
-         NSLog(@"Error loading images %@", error);
-         imageBlock(nil);
-     }];
+    [_assetsLibrary enumerateGroupsWithTypes:ALAssetsGroupAll usingBlock:^(ALAssetsGroup *group, BOOL *stop) {
+        if (group)
+        {
+            id type = [group valueForProperty:ALAssetsGroupPropertyType];
+            if ([type integerValue] == 16)
+            {
+                [group enumerateAssetsWithOptions:NSEnumerationReverse usingBlock:^(ALAsset *result, NSUInteger index, BOOL *stop) {
+                    if (result && assetsArray.count <= maxSize)
+                    {
+                        [assetsArray addObject:result];
+                    }else{
+                        *stop = YES;
+                    }
+                }];
+                imageBlock(assetsArray);
+            }
+        }
+    } failureBlock:^(NSError *error) {
+        NSLog(@"Error loading images %@", error);
+        imageBlock(nil);
+    }];
 }
 
 @end
