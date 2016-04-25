@@ -20,9 +20,9 @@ static CGFloat HorizontalCheckmarkInset = 4.0;
     NSMutableArray *attributes = [[super layoutAttributesForElementsInRect:rect] mutableCopy];
     
     // Add our supplementary views, thet checkmark views
-        [attributes enumerateObjectsUsingBlock:^(UICollectionViewLayoutAttributes *attrs, NSUInteger idx, BOOL *stop) {
-            [attributes addObject:[self layoutAttributesForSupplementaryViewOfKind:@"elementKind" atIndexPath:attrs.indexPath]];
-        }];
+    [attributes enumerateObjectsUsingBlock:^(UICollectionViewLayoutAttributes *attrs, NSUInteger idx, BOOL *stop) {
+        [attributes addObject:[self layoutAttributesForSupplementaryViewOfKind:@"elementKind" atIndexPath:attrs.indexPath]];
+    }];
     
     return attributes;
 }
